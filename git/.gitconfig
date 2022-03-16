@@ -1,0 +1,24 @@
+[user]
+	name = Akinori Yoshida
+	email = marqs.y@gmail.com
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	grep = auto
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	l = log --pretty=oneline --graph --abbrev-commit
+	ic = !hub issue create -m $1
+	publish = !git checkout -b $1 && git push -u origin
+[core]
+	editor = code --wait
+	quotepath = false
+	excludesfile = ~/.gitignore_global
+[grep]
+	lineNumber = true
+[includeIf "gitdir:~/work/**"]
+  path = ~/.gitconfig_work
